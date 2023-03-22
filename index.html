@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="left">
+        <div class="box">
+          <i id="mySign" class="fas fa-hand-rock me"></i>
+          <span id="text">Rock</span>
+        </div>
+        <span id="id">You</span>
+      </div>
+
+      <span id="score">0 - 0</span>
+      <span id="state" class=""></span>
+
+      <div class="right">
+        <div class="box">
+          <i id="compSign" class="fas fa-hand-rock computer"></i>
+          <span id="textComputer">Rock</span>
+        </div>
+        <span id="id">Computer</span>
+      </div>
+
+
+      <div class="selectBox chooseOne">
+        <i class="fas fa-hand-rock" onclick="play('Rock')"></i>
+        <i class="fas fa-hand-scissors" onclick="play('Scissors')"></i>
+        <i class="fas fa-hand-paper" onclick="play('Paper')"></i>
+      </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
